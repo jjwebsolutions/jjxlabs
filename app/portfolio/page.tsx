@@ -30,7 +30,7 @@ export default function Portfolio() {
               <CardContent>
                 <p>Card Content</p>
               </CardContent>
-              <button className="btn btn-primary">Example</button>
+              <button className="btn btn-primary p-5">Example</button>
             </div>
           </Card>
           <Card className="w-4/4 mt-5">
