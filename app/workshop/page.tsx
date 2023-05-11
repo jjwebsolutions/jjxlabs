@@ -9,25 +9,22 @@ import {
 
 export default function Portfolio() {
   return (
-    <main className="flex min-h-screen flex-col items-center  p-16">
-      <Card className="w-4/4 p-12">
+    <main className="flex  flex-col items-center  p-16">
+      <Card className="min-w-full p-12">
         <CardHeader>
           <CardTitle>What can i build for you?</CardTitle>
-          <CardDescription>
-            I mainly use NextJS, TypeScript, Tailwind and Prisma for my work
-          </CardDescription>
+          <CardDescription></CardDescription>
         </CardHeader>
         <CardContent>
           <Card className="w-4/4 mt-5">
             <CardHeader>
-              <CardTitle>
-                Fullstack app using authentification and interactions with a
-                database
-              </CardTitle>
-              <CardDescription>Card Description</CardDescription>
+              <CardTitle>Fullstack app</CardTitle>
+              <CardDescription>
+                Using authentification and interactions with a database
+              </CardDescription>
             </CardHeader>
             <div className="flex justify-between">
-              <CardContent>
+              <CardContent className="pt-6">
                 <p>Card Content</p>
               </CardContent>
               <button className="btn btn-primary p-5">Example</button>
@@ -35,15 +32,19 @@ export default function Portfolio() {
           </Card>
           <Card className="w-4/4 mt-5">
             <CardHeader>
-              <CardTitle>
-                Beautiful and simple app to showcase your project
-              </CardTitle>
-              <CardDescription>Card Description</CardDescription>
+              <CardTitle>Simple app</CardTitle>
+              <CardDescription>
+                Beautiful app to showcase your project
+              </CardDescription>
             </CardHeader>
-            <CardContent>
-              <p>Card Content</p>
-            </CardContent>
+            <div className="flex justify-between">
+              <CardContent className="pt-6">
+                <p>Card Content</p>
+              </CardContent>
+              <button className="btn btn-primary p-5">Example</button>
+            </div>
           </Card>
+
           <Card className="w-4/4 mt-5">
             <CardHeader>
               <CardTitle>Work on your project</CardTitle>

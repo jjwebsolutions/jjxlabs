@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import "./glitch.css";
 
 export default function Home() {

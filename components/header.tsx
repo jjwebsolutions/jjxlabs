@@ -26,9 +26,9 @@ export function Header() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/portfolio" legacyBehavior passHref>
+            <Link href="/workshop" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Portfolio
+                Workshop
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
@@ -39,8 +39,8 @@ export function Header() {
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
+          <ModeToggle />
         </NavigationMenuList>
-        <ModeToggle />
       </NavigationMenu>
     </>
   );
