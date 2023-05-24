@@ -25,35 +25,35 @@ export default function About() {
               <CardTitle>
                 I mainly use NextJS, TypeScript, Tailwind and Prisma for my work
               </CardTitle>
-              <CardDescription>..</CardDescription>
             </CardHeader>
             <div className="flex justify-between">
               <CardContent className="pt-6">
-                <p>Card Content</p>
+                <p>
+                  If you need specific tech i can always adapt if it makes sense
+                </p>
               </CardContent>
-              <button className="btn btn-primary p-5">Example</button>
             </div>
           </Card>
           <Card className="w-4/4 mt-5">
             <CardHeader>
               <CardTitle>Contact</CardTitle>
-              <CardDescription>..</CardDescription>
             </CardHeader>
             <div className="flex justify-between">
               <CardContent className="pt-6">
-                <p>Card Content</p>
+                <p>Send me an email at .. </p>
               </CardContent>
-              <button className="btn btn-primary p-5">Example</button>
             </div>
           </Card>
 
           <Card className="w-4/4 mt-5">
             <CardHeader>
               <CardTitle>Web3</CardTitle>
-              <CardDescription>Card Description</CardDescription>
             </CardHeader>
             <CardContent>
-              <p>Card Content</p>
+              <p>
+                If you're coming from web3 and want to build a project i will be
+                happy to talk about it with you
+              </p>
             </CardContent>
           </Card>
         </CardContent>

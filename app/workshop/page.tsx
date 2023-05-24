@@ -47,8 +47,52 @@ export default function Portfolio() {
 
           <Card className="w-4/4 mt-5">
             <CardHeader>
-              <CardTitle>Work on your project</CardTitle>
-              <CardDescription>Card Description</CardDescription>
+              <CardTitle>Wordpress/Shopify website</CardTitle>
+              <CardDescription>
+                Beautiful website accepting payments
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p>Card Content</p>
+            </CardContent>
+          </Card>
+        </CardContent>
+      </Card>
+      <Card className="mt-12 min-w-full p-12">
+        <CardHeader>
+          <CardTitle>Proof of work</CardTitle>
+          <CardDescription></CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Card className="w-4/4 mt-5">
+            <CardHeader>
+              <CardTitle>Tennis reservation app</CardTitle>
+              <CardDescription>
+                I used NextJS, TypeScript, Tailwind and Prisma to build this app
+              </CardDescription>
+            </CardHeader>
+            <div className="flex justify-between">
+              <CardContent className="pt-6">
+                <p>Card Content</p>
+              </CardContent>
+            </div>
+          </Card>
+          <Card className="w-4/4 mt-5">
+            <CardHeader>
+              <CardTitle>Landing page</CardTitle>
+              <CardDescription>Example of a landing page ...</CardDescription>
+            </CardHeader>
+            <div className="flex justify-between">
+              <CardContent className="pt-6">
+                <p>Card Content</p>
+              </CardContent>
+            </div>
+          </Card>
+
+          <Card className="w-4/4 mt-5">
+            <CardHeader>
+              <CardTitle>Worpress website</CardTitle>
+              <CardDescription>coming..</CardDescription>
             </CardHeader>
             <CardContent>
               <p>Card Content</p>
