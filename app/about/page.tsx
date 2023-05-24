@@ -51,8 +51,8 @@ export default function About() {
             </CardHeader>
             <CardContent>
               <p>
-                If you're coming from web3 and want to build a project i will be
-                happy to talk about it with you
+                If you are coming from web3 and want to build a project i will
+                be happy to talk about it with you
               </p>
             </CardContent>
           </Card>
