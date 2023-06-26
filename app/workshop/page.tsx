@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Card,
   CardContent,
@@ -7,10 +9,12 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+import Link from "next/link";
+
 export default function Portfolio() {
   return (
-    <main className="flex  flex-col items-center  p-16">
-      <Card className="min-w-full p-12">
+    <main className="flex  flex-col items-center  p-3 sm:p-16">
+      <Card className="min-w-full sm:p-12 ">
         <CardHeader>
           <CardTitle>What can i build for you?</CardTitle>
           <CardDescription></CardDescription>
@@ -58,7 +62,7 @@ export default function Portfolio() {
           </Card>
         </CardContent>
       </Card>
-      <Card className="mt-12 min-w-full p-12">
+      <Card className="mt-12 min-w-full sm:p-12">
         <CardHeader>
           <CardTitle>Proof of work</CardTitle>
           <CardDescription></CardDescription>
@@ -68,12 +72,55 @@ export default function Portfolio() {
             <CardHeader>
               <CardTitle>Tennis reservation app</CardTitle>
               <CardDescription>
-                I used NextJS, TypeScript, Tailwind and Prisma to build this app
+                This app use credential authentification and allow you to check
+                if a session is available the day you want to reserve a court. I
+                used NextJS, TypeScript, Tailwind and Prisma to build this app
+                and a SQL database
               </CardDescription>
             </CardHeader>
-            <div className="flex justify-between">
+            <div className="flex justify-center">
+              <CardContent className="pt-6 ">
+                <img
+                  className="max-w-3xl hidden lg:block"
+                  src="https://i.goopics.net/v9bqb3.png"
+                  alt="logo"
+                />
+                <Link
+                  className="flex justify-center pt-5"
+                  href="https://nextcourt.vercel.app/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Try it
+                </Link>
+              </CardContent>
+            </div>
+          </Card>
+          <Card className="w-4/4 mt-5">
+            <CardHeader>
+              <CardTitle>Reddit clone</CardTitle>
+              <CardDescription>
+                This app use google authentification and allow you to create a
+                community so you and others user can create post and interact
+                with them. I used NextJS, TypeScript, Tailwind and Prisma to
+                build this app and a SQL database
+              </CardDescription>
+            </CardHeader>
+            <div className="flex justify-center">
               <CardContent className="pt-6">
-                <p>Card Content</p>
+                <img
+                  className="max-w-3xl hidden lg:block"
+                  src="https://i.goopics.net/2oi26s.png"
+                  alt="logo"
+                />
+                <Link
+                  className="flex justify-center pt-5"
+                  href="https://reddint.vercel.app/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Try it
+                </Link>
               </CardContent>
             </div>
           </Card>

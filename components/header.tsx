@@ -16,7 +16,7 @@ import {
 export function Header() {
   return (
     <>
-      <NavigationMenu className="mt-5">
+      <NavigationMenu className="mt-5 mb-5">
         <NavigationMenuList>
           <NavigationMenuItem>
             <Link href="/" legacyBehavior passHref>

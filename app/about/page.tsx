@@ -9,27 +9,27 @@ import {
 
 export default function About() {
   return (
-    <main className="flex  flex-col items-center  p-16">
-      <Card className="min-w-full p-12">
+    <main className="flex  flex-col items-center  p-3 sm:p-16">
+      <Card className="min-w-full sm:p-12">
         <CardHeader>
           <CardTitle>Fullstack web developer based in Paris</CardTitle>
-          <CardDescription>
-            Passionate about new tech i always look for the latest innovations
-            to make my work the fastest yet the most efficient. From a simple
-            website to a complex app i will be happy to build it for you.
-          </CardDescription>
+          <CardDescription></CardDescription>
         </CardHeader>
         <CardContent>
           <Card className="w-4/4 mt-5">
             <CardHeader>
               <CardTitle>
-                I mainly use NextJS, TypeScript, Tailwind and Prisma for my work
+                I mainly use NextJS, TypeScript, Tailwind and SQL database for
+                my work
               </CardTitle>
             </CardHeader>
             <div className="flex justify-between">
               <CardContent className="pt-6">
                 <p>
-                  If you need specific tech i can always adapt if it makes sense
+                  Passionate about new tech i always look for the latest
+                  innovations in web development to make my apps beautiful, fast
+                  and the most secure possible. From a simple website to a
+                  complex app i will be happy to build it for you.
                 </p>
               </CardContent>
             </div>
@@ -40,7 +40,8 @@ export default function About() {
             </CardHeader>
             <div className="flex justify-between">
               <CardContent className="pt-6">
-                <p>Send me an email at .. </p>
+                <p>Julien A.</p>
+                <p> jj.websolutions@proton.me </p>
               </CardContent>
             </div>
           </Card>
