@@ -27,7 +27,7 @@ export default function About() {
               <p>
                 I always pursue the latest innovations in web development. My
                 work is to create beautiful, fast, and highly secure
-                applications. Whether it's a simple website or a complex app, I
+                applications. Whether it is a simple website or a complex app, I
                 am thrilled to bring your vision to life.
               </p>
             </CardContent>
