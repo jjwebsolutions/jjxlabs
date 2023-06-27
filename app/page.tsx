@@ -2,7 +2,7 @@ import "./glitch.css";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center  justify-between p-20">
+    <main className="flex min-h-screen flex-col items-center  ml-1 justify-between p-20">
       <div className="hero-container">
         <div className="environment"></div>
         <h2 className="hero glitch layers" data-text="jjxlabs">
