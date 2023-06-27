@@ -113,7 +113,7 @@ export default function Portfolio() {
             <CardContent className="pt-6">
               <img
                 className="max-w-3xl hidden lg:block"
-                src="https://i.goopics.net/2oi26s.png"
+                src="https://i.goopics.net/7bf8q7.png"
                 alt="logo"
               />
               <Link
