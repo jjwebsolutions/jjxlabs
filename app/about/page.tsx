@@ -9,7 +9,7 @@ import {
 
 export default function About() {
   return (
-    <main className="flex  flex-col items-center mt-10  p-3 sm:pr-52 sm:pl-52 pt-5">
+    <main className="flex  flex-col items-center mt-10   p-3 xl:pr-96 xl:pl-96 pt-5">
       <CardHeader>
         <CardTitle>Fullstack web dev based in Paris</CardTitle>
         <CardDescription></CardDescription>
