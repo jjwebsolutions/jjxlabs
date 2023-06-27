@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export default function Portfolio() {
   return (
-    <main className="flex  flex-col items-center  p-3 sm:p-16">
+    <main className="flex  flex-col items-center mt-10  p-3 sm:p-16">
       <Card className="min-w-full sm:p-12 ">
         <CardHeader>
           <CardTitle>What can i build for you?</CardTitle>
