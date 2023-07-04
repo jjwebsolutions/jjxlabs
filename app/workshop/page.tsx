@@ -16,7 +16,9 @@ export default function Portfolio() {
   return (
     <main className="flex  flex-col items-center mt-10  p-3  sm:pr-52 sm:pl-52">
       <CardHeader>
-        <CardTitle>What can i build for you?</CardTitle>
+        <CardTitle className=" text-xl lg:text-3xl">
+          What can i build for you?
+        </CardTitle>
         <CardDescription></CardDescription>
       </CardHeader>
       <CardContent>
@@ -29,9 +31,6 @@ export default function Portfolio() {
           </CardHeader>
           <div className="flex justify-between">
             <CardContent className="pt-6"></CardContent>
-            <a href="#tennis" className="btn btn-primary p-5">
-              Example
-            </a>
           </div>
         </Card>
         <Card className="w-4/4 mt-5">
@@ -44,9 +43,6 @@ export default function Portfolio() {
           </CardHeader>
           <div className="flex justify-between">
             <CardContent className="pt-6"></CardContent>
-            <a href="#landing" className="btn btn-primary p-5">
-              Example
-            </a>
           </div>
         </Card>
 
@@ -59,15 +55,12 @@ export default function Portfolio() {
           </CardHeader>
           <div className="flex justify-between">
             <CardContent></CardContent>
-            <a href="#payment" className="btn btn-primary p-5">
-              Example
-            </a>
           </div>
         </Card>
       </CardContent>
       <Separator className="mt-10 mb-10" />
       <CardHeader>
-        <CardTitle id="tennis">Proof of work</CardTitle>
+        <CardTitle className="text-xl lg:text-3xl">Proof of work</CardTitle>
         <CardDescription></CardDescription>
       </CardHeader>
       <CardContent>

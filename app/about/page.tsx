@@ -11,7 +11,9 @@ export default function About() {
   return (
     <main className="flex  flex-col items-center mt-10   p-3 xl:pr-96 xl:pl-96 pt-5">
       <CardHeader>
-        <CardTitle>Fullstack web dev based in Paris</CardTitle>
+        <CardTitle className="text-xl lg:text-3xl text-center">
+          Fullstack web developer based in Paris
+        </CardTitle>
         <CardDescription></CardDescription>
       </CardHeader>
       <CardContent>

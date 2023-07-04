@@ -17,7 +17,7 @@ export function Header() {
   return (
     <>
       <div className="container flex justify-between items-center mx-auto mt-5">
-        <NavigationMenu>
+        <NavigationMenu className="ml-5">
           <NavigationMenuList>
             <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
