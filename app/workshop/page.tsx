@@ -77,8 +77,8 @@ export default function Portfolio() {
             <CardDescription>
               This app use credential authentification and allow you to check if
               a session is available the day you want to reserve a court. I used
-              NextJS, TypeScript, Tailwind and Prisma to build this app and a
-              SQL database
+              NextJS, TypeScript, Tailwind, tRPC and Prisma to build this app
+              and a SQL database
             </CardDescription>
           </CardHeader>
           <div className="flex justify-center">
