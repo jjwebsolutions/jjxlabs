@@ -16,46 +16,38 @@ export default function Portfolio() {
   return (
     <main className="flex  flex-col items-center mt-10  p-3  sm:pr-52 sm:pl-52">
       <CardHeader>
-        <CardTitle className=" text-xl lg:text-3xl">
+        <CardTitle className=" text-xl lg:text-3xl  ">
           What can i build for you?
         </CardTitle>
         <CardDescription></CardDescription>
       </CardHeader>
       <CardContent>
-        <Card className="w-4/4 mt-5">
-          <CardHeader>
+        <Card className="w-4/4 mt-5 pb-3 pt-1">
+          <CardHeader className="items-center">
             <CardTitle>Fullstack app</CardTitle>
-            <CardDescription>
-              Using authentification and interactions with a database
+            <CardDescription className="text-center">
+              Using any authentification provider and interactions with a
+              database
             </CardDescription>
           </CardHeader>
-          <div className="flex justify-between">
-            <CardContent className="pt-6"></CardContent>
-          </div>
         </Card>
-        <Card className="w-4/4 mt-5">
-          <CardHeader>
-            <CardTitle>Simple app</CardTitle>
-            <CardDescription>
-              Beautiful website with animations to showcase your project or your
-              product with best SEO.
+        <Card className="w-4/4 mt-5 pb-3 pt-1">
+          <CardHeader className="items-center">
+            <CardTitle className="">Landing page</CardTitle>
+            <CardDescription className="text-center">
+              Simple and beautiful website with animations to showcase your
+              project or your product with best SEO.
             </CardDescription>
           </CardHeader>
-          <div className="flex justify-between">
-            <CardContent className="pt-6"></CardContent>
-          </div>
         </Card>
 
-        <Card className="w-4/4 mt-5">
-          <CardHeader>
+        <Card className="w-4/4 mt-5 pb-3 pt-1">
+          <CardHeader className="items-center">
             <CardTitle>Wordpress/Shopify website</CardTitle>
             <CardDescription>
               Beautiful website accepting payments
             </CardDescription>
           </CardHeader>
-          <div className="flex justify-between">
-            <CardContent></CardContent>
-          </div>
         </Card>
       </CardContent>
       <Separator className="mt-10 mb-10" />
