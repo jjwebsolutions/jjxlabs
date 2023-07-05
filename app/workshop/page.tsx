@@ -79,7 +79,7 @@ export default function Portfolio() {
               <img
                 className="max-w-3xl hidden lg:block"
                 src="https://i.goopics.net/v9bqb3.png"
-                alt="logo"
+                alt="screenshot of a beautiful website use for reservation"
               />
               <Link
                 className="flex justify-center pt-5"
@@ -107,7 +107,7 @@ export default function Portfolio() {
               <img
                 className="max-w-3xl hidden lg:block"
                 src="https://i.goopics.net/7bf8q7.png"
-                alt="logo"
+                alt="screenshot of a beautiful website similar to reddit"
               />
               <Link
                 className="flex justify-center pt-5"
