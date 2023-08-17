@@ -28,8 +28,8 @@ export default function Portfolio() {
           <CardHeader className="items-center">
             <CardTitle>Fullstack app</CardTitle>
             <CardDescription className="text-center">
-              Using any authentification provider and interactions with a
-              database
+              Using any authentification provider and complex interactions with
+              a database
             </CardDescription>
           </CardHeader>
         </Card>
