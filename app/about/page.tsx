@@ -1,3 +1,5 @@
+import "../glitch.css";
+
 import {
   Card,
   CardContent,
@@ -17,7 +19,7 @@ export default function About() {
         <CardDescription></CardDescription>
       </CardHeader>
       <CardContent>
-        <Card className="w-4/4 mt-5">
+        <Card className="w-4/4 mt-5 card1">
           <CardHeader>
             <CardTitle>
               I mainly use NextJS, TypeScript, Tailwind and SQL database for my
@@ -35,7 +37,7 @@ export default function About() {
             </CardContent>
           </div>
         </Card>
-        <Card className="w-4/4 mt-5">
+        <Card className="w-4/4 mt-5 card2">
           <CardHeader>
             <CardTitle>Contact</CardTitle>
           </CardHeader>

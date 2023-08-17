@@ -481,6 +481,28 @@ section {
   position: relative;
   padding: 200px 0;
   text-align: center;
+  animation: fadeIn 5s;
+}
+
+.card1 {
+  animation: fadeIn 2s;
+}
+.card2 {
+  animation: fadeIn 3s;
+}
+.card3 {
+  animation: fadeIn 4s;
+}
+.cardContent2 {
+  animation: fadeIn 8s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .environment {

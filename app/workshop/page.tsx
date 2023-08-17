@@ -1,5 +1,7 @@
 "use client";
 
+import "../glitch.css";
+
 import {
   Card,
   CardContent,
@@ -21,8 +23,8 @@ export default function Portfolio() {
         </CardTitle>
         <CardDescription></CardDescription>
       </CardHeader>
-      <CardContent>
-        <Card className="w-4/4 mt-5 pb-3 pt-1">
+      <CardContent className="Card-Content">
+        <Card className="w-4/4 mt-5 pb-3 pt-1 card1">
           <CardHeader className="items-center">
             <CardTitle>Fullstack app</CardTitle>
             <CardDescription className="text-center">
@@ -31,7 +33,7 @@ export default function Portfolio() {
             </CardDescription>
           </CardHeader>
         </Card>
-        <Card className="w-4/4 mt-5 pb-3 pt-1">
+        <Card className="w-4/4 mt-5 pb-3 pt-1 card1">
           <CardHeader className="items-center">
             <CardTitle className="">Landing page</CardTitle>
             <CardDescription className="text-center">
@@ -41,7 +43,7 @@ export default function Portfolio() {
           </CardHeader>
         </Card>
 
-        <Card className="w-4/4 mt-5 pb-3 pt-1">
+        <Card className="w-4/4 mt-5 pb-3 pt-1 card3">
           <CardHeader className="items-center">
             <CardTitle>Wordpress/Shopify website</CardTitle>
             <CardDescription>
@@ -52,10 +54,12 @@ export default function Portfolio() {
       </CardContent>
       <Separator className="mt-10 mb-10" />
       <CardHeader>
-        <CardTitle className="text-xl lg:text-3xl">Proof of work</CardTitle>
+        <CardTitle className="cardContent2 text-xl lg:text-3xl">
+          Proof of work
+        </CardTitle>
         <CardDescription></CardDescription>
       </CardHeader>
-      <CardContent>
+      <CardContent className="cardContent2">
         <Card className="w-4/4 mt-5">
           <CardHeader>
             <CardTitle>Tennis reservation app</CardTitle>
