@@ -29,7 +29,7 @@ export default function Portfolio() {
             <CardTitle>Fullstack app</CardTitle>
             <CardDescription className="text-center">
               Using any authentification provider and complex interactions with
-              a database
+              a database.
             </CardDescription>
           </CardHeader>
         </Card>
@@ -47,7 +47,7 @@ export default function Portfolio() {
           <CardHeader className="items-center">
             <CardTitle>Wordpress/Shopify website</CardTitle>
             <CardDescription>
-              Beautiful website accepting payments
+              Beautiful website accepting payments.
             </CardDescription>
           </CardHeader>
         </Card>
@@ -67,7 +67,7 @@ export default function Portfolio() {
               This app use credential authentification and allow you to check if
               a session is available the day you want to reserve a court. I used
               NextJS, TypeScript, Tailwind, tRPC and Prisma to build this app
-              and a SQL database
+              and a SQL database.
             </CardDescription>
           </CardHeader>
           <div className="flex justify-center">
@@ -95,7 +95,7 @@ export default function Portfolio() {
               This app use google authentification and allow you to create a
               community so you and others user can create post and interact with
               them. I used NextJS, TypeScript, Tailwind and Prisma to build this
-              app and a SQL database
+              app and a SQL database.
             </CardDescription>
           </CardHeader>
           <div className="flex justify-center">
@@ -118,8 +118,17 @@ export default function Portfolio() {
         </Card>
         <Card className="w-4/4 mt-5">
           <CardHeader id="landing">
+            <CardTitle>E-commerce platform + dashboard admin page</CardTitle>
+            <CardDescription>Coming very soon.</CardDescription>
+          </CardHeader>
+          <div className="flex justify-between">
+            <CardContent className="pt-6"></CardContent>
+          </div>
+        </Card>
+        <Card className="w-4/4 mt-5">
+          <CardHeader id="landing">
             <CardTitle>Landing page</CardTitle>
-            <CardDescription>Coming very soon</CardDescription>
+            <CardDescription>Coming very soon.</CardDescription>
           </CardHeader>
           <div className="flex justify-between">
             <CardContent className="pt-6"></CardContent>
@@ -128,8 +137,8 @@ export default function Portfolio() {
 
         <Card className="w-4/4 mt-5">
           <CardHeader id="payment">
-            <CardTitle>Wordpress/Shopify website</CardTitle>
-            <CardDescription>Coming very soon</CardDescription>
+            <CardTitle>AI SaaS platform</CardTitle>
+            <CardDescription>Coming very soon.</CardDescription>
           </CardHeader>
           <CardContent></CardContent>
         </Card>
