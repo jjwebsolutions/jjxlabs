@@ -55,7 +55,7 @@ export default function Portfolio() {
       <Separator className="mt-10 mb-10" />
       <CardHeader>
         <CardTitle className="cardContent2 text-xl lg:text-3xl">
-          Proof of work
+          Projects
         </CardTitle>
         <CardDescription></CardDescription>
       </CardHeader>
@@ -117,21 +117,58 @@ export default function Portfolio() {
           </div>
         </Card>
         <Card className="w-4/4 mt-5">
-          <CardHeader id="landing">
-            <CardTitle>E-commerce platform + dashboard admin page</CardTitle>
-            <CardDescription>Coming very soon.</CardDescription>
+          <CardHeader>
+            <CardTitle>E-commerce market</CardTitle>
+            <CardDescription>
+              This app allow you to showcase and sell the products that you
+              manage in the dashboard bellow. It accepts payments via Stripe.
+              You can use the public API provide by the dashboard to link the
+              e-commerce and the dashboard.
+            </CardDescription>
           </CardHeader>
-          <div className="flex justify-between">
-            <CardContent className="pt-6"></CardContent>
+          <div className="flex justify-center">
+            <CardContent className="pt-6 ">
+              <img
+                className="max-w-3xl hidden lg:block"
+                src="https://i.goopics.net/y5thji.png"
+                alt="screenshot of a beautiful e-commerce website"
+              />
+              <Link
+                className="flex justify-center pt-5"
+                href="https://jjxstore-client.vercel.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Try it
+              </Link>
+            </CardContent>
           </div>
         </Card>
         <Card className="w-4/4 mt-5">
-          <CardHeader id="landing">
-            <CardTitle>Landing page</CardTitle>
-            <CardDescription>Coming very soon.</CardDescription>
+          <CardHeader>
+            <CardTitle>E-commerce dashboard</CardTitle>
+            <CardDescription>
+              A dashboard that allows you to manage multiple stores and their
+              products. Demo account linked to the store:
+              demojjxlabs@gmail.com:3iBPM7ActvEk7RJ
+            </CardDescription>
           </CardHeader>
-          <div className="flex justify-between">
-            <CardContent className="pt-6"></CardContent>
+          <div className="flex justify-center">
+            <CardContent className="pt-6 ">
+              <img
+                className="max-w-3xl hidden lg:block"
+                src="https://i.goopics.net/kkw25z.png"
+                alt="screenshot of a beautiful dashboard used to manage a store"
+              />
+              <Link
+                className="flex justify-center pt-5"
+                href="https://jjxstore-admin.vercel.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Try it
+              </Link>
+            </CardContent>
           </div>
         </Card>
 
