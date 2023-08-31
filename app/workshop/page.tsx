@@ -45,7 +45,7 @@ export default function Portfolio() {
 
         <Card className="w-4/4 mt-5 pb-3 pt-1 card3">
           <CardHeader className="items-center">
-            <CardTitle>Wordpress/Shopify website</CardTitle>
+            <CardTitle>Wordpress/Shopify website/Stripe</CardTitle>
             <CardDescription>
               Beautiful website accepting payments.
             </CardDescription>
