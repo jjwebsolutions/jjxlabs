@@ -24,7 +24,7 @@ export function Header() {
   return (
     <>
       <div className="container flex  items-center mx-auto mt-5">
-        <NavigationMenu className="ml-5">
+        <NavigationMenu className="ml-5 md:justify-end md:mr-10">
           <NavigationMenuList className="space-x-2 md:space-x-8">
             <NavigationMenuItem>
               <Button className="buttonFadeIn">
@@ -56,8 +56,9 @@ export function Header() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-
-        <ModeToggle />
+        <div className="buttonFadeIn">
+          <ModeToggle />
+        </div>
       </div>
     </>
   );

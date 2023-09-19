@@ -21,13 +21,13 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center   justify-between p-10 lg:p-20">
+    <main className="flex min-h-screen flex-col items-center   justify-between sm:p-10 lg:p-20">
       <div className="h-screen ">
-        <div className=" flex flex-col xl:flex-row text-center xl:text-left space-x-8">
+        <div className=" flex flex-col xl:flex-row text-center xl:text-left sm:space-x-8">
           <div className=" p-3  ">
             <TrailAnimation />
           </div>
-          <div className="sm:mt-40 mt-3 p-3 ">
+          <div className="sm:mt-40 p-3 ">
             <TrailAnimation2 />
           </div>
         </div>
