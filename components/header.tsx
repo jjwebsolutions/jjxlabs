@@ -1,10 +1,17 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
 
 import { ModeToggle } from "@/components/mode-toggle";
-
+import {
+  Link as LinkScroll,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
+import { Button } from "./ui/button";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -16,29 +23,50 @@ import {
 export function Header() {
   return (
     <>
-      <div className="container flex justify-between items-center mx-auto mt-5">
+      <div className="container flex  items-center mx-auto mt-5">
         <NavigationMenu className="ml-5">
-          <NavigationMenuList>
+          <NavigationMenuList className="space-x-2 md:space-x-8">
             <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <Button className="buttonFadeIn">
+                <LinkScroll
+                  activeClass="active"
+                  to="/"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
                   Home
-                </NavigationMenuLink>
-              </Link>
+                </LinkScroll>
+              </Button>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/workshop" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Workshop
-                </NavigationMenuLink>
-              </Link>
+              <Button className="buttonFadeIn">
+                <LinkScroll
+                  activeClass="active"
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={-30}
+                  duration={500}
+                >
+                  Projects
+                </LinkScroll>
+              </Button>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/about" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <Button className="buttonFadeIn">
+                <LinkScroll
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-30}
+                  duration={500}
+                >
                   About
-                </NavigationMenuLink>
-              </Link>
+                </LinkScroll>
+              </Button>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>

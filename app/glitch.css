@@ -488,20 +488,41 @@ section {
   animation: fadeIn 2s;
 }
 .card2 {
-  animation: fadeIn 3s;
+  animation: fadeIn 2s;
 }
 .card3 {
-  animation: fadeIn 4s;
+  animation: fadeIn 2s;
 }
 .cardContent2 {
-  animation: fadeIn 5s;
+  animation: fadeIn 2s;
 }
+.buttonFadeIn {
+  animation: fadeIn 5s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
-  100% {
+  10% {
     opacity: 1;
+  }
+}
+
+@keyframes logoAnimation {
+  0% {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  100% {
+    position: absolute;
+
+    bottom: 1000;
   }
 }
 
