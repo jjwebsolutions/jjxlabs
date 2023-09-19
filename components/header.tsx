@@ -24,22 +24,8 @@ export function Header() {
   return (
     <>
       <div className="container flex  items-center mx-auto mt-5">
-        <NavigationMenu className="ml-5">
+        <NavigationMenu className="ml-5 invisible">
           <NavigationMenuList className="space-x-2 md:space-x-8">
-            <NavigationMenuItem>
-              <Button className="buttonFadeIn">
-                <LinkScroll
-                  activeClass="active"
-                  to="/"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                >
-                  Home
-                </LinkScroll>
-              </Button>
-            </NavigationMenuItem>
             <NavigationMenuItem>
               <Button className="buttonFadeIn">
                 <LinkScroll
