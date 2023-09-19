@@ -209,8 +209,8 @@ export default function Home() {
             </CardHeader>
             <div className="flex justify-between">
               <CardContent className="pt-6">
-                <p>Julien A.</p>
-                <p> jj.websolutions@proton.me </p>
+                <p>Julien Atanassov</p>
+                <p>atanassov.julien@gmail.com</p>
               </CardContent>
             </div>
           </Card>
