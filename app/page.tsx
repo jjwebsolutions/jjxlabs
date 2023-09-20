@@ -16,6 +16,8 @@ import TrailAnimation2 from "@/components/trailAnimation2";
 import { Button } from "@/components/ui/button";
 import scrollToTop from "@/components/scrollToTop";
 
+import "../app/globals.css";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center   justify-between sm:p-10 lg:p-20">

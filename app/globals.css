@@ -74,3 +74,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+.buttonFadeIn {
+  animation: fadeIn 5s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+}
