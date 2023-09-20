@@ -215,7 +215,7 @@ export default function Home() {
             </div>
           </Card>
         </CardContent>
-        <div className="mt-32 flex justify-end">
+        <div className="xl:mt-32 p-4 flex justify-end">
           <Button onClick={scrollToTop}>TOP</Button>
         </div>
       </div>
