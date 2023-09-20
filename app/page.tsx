@@ -1,12 +1,9 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import "./glitch.css";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -16,8 +13,8 @@ import { Link as LinkScroll } from "react-scroll";
 import { Separator } from "@/components/ui/separator";
 import TrailAnimation from "@/components/trailAnimation";
 import TrailAnimation2 from "@/components/trailAnimation2";
-import * as Scroll from "react-scroll";
 import { Button } from "@/components/ui/button";
+import scrollToTop from "@/components/scrollToTop";
 
 export default function Home() {
   return (
@@ -181,7 +178,7 @@ export default function Home() {
       <div className="h-screen sm:p-14 mt-10" id="about">
         <CardHeader>
           <CardTitle className="text-xl lg:text-3xl text-center">
-            Fullstack web developer based in Paris
+            Based in Paris
           </CardTitle>
           <CardDescription></CardDescription>
         </CardHeader>
@@ -216,6 +213,9 @@ export default function Home() {
             </div>
           </Card>
         </CardContent>
+        <div className="mt-32 flex justify-end">
+          <Button onClick={scrollToTop}>TOP</Button>
+        </div>
       </div>
     </main>
   );

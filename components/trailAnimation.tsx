@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { useTrail, a } from "@react-spring/web";
 
