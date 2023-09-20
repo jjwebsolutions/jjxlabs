@@ -36,6 +36,7 @@ export default function Home() {
             <LinkScroll
               className="text-center"
               activeClass="active"
+              href="projects"
               to="projects"
               spy={true}
               smooth={true}

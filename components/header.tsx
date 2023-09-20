@@ -30,6 +30,7 @@ export function Header() {
               <Button className="buttonFadeIn">
                 <LinkScroll
                   activeClass="active"
+                  href="projects"
                   to="projects"
                   spy={true}
                   smooth={true}
@@ -44,6 +45,7 @@ export function Header() {
               <Button className="buttonFadeIn">
                 <LinkScroll
                   activeClass="active"
+                  href="about"
                   to="about"
                   spy={true}
                   smooth={true}
