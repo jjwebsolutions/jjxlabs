@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center   justify-between  ">
       <div className="h-screen ">
-        <div className=" flex flex-col xl:flex-row text-center xl:text-left sm:space-x-8">
+        <div className=" flex flex-col xl:flex-row text-center mt-20 xl:text-left sm:space-x-8">
           <div className=" p-3  ">
             <TrailAnimation />
           </div>
