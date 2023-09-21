@@ -234,8 +234,7 @@ export default function Home() {
               <CardTitle className="text-2xl">E-commerce dashboard</CardTitle>
               <CardDescription className="lg:hidden">
                 A dashboard that allows you to manage multiple stores and their
-                products. Demo account linked to the store:
-                demojjxlabs@gmail.com:3iBPM7ActvEk7RJ
+                products.
               </CardDescription>
               <CardDescription>
                 Demo account linked to the store:
