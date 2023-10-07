@@ -17,7 +17,7 @@ function ContactContent() {
       <div className="h-screen sm:p-14 mt-10" id="about">
         <CardHeader>
           <CardTitle className="text-xl lg:text-3xl text-center">
-            Let&aposs work together
+            Let&apos;s work together
           </CardTitle>
           <CardDescription></CardDescription>
         </CardHeader>
