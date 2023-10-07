@@ -72,6 +72,7 @@ function ContentPageAnimated() {
       from: {
         opacity: 0,
         y: 100,
+        once: true,
       },
       to: {
         opacity: 1,
@@ -96,6 +97,7 @@ function ContentPageAnimated() {
     }),
     {
       rootMargin: "0% 0%",
+      once: true,
     }
   );
 
@@ -114,6 +116,7 @@ function ContentPageAnimated() {
 
     {
       rootMargin: "0% 0%",
+      once: true,
     }
   );
   const [ref7, springs7] = useInView(
