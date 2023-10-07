@@ -13,7 +13,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
-export default function Header() {
+export function Header() {
   return (
     <>
       <div className="container flex  items-center mx-auto mt-5">
