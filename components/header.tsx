@@ -3,15 +3,8 @@
 import * as React from "react";
 
 import { ModeToggle } from "@/components/mode-toggle";
-import {
-  Link as LinkScroll,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
 import { Button } from "./ui/button";
+import { Link as LinkScroll, animateScroll as scroll } from "react-scroll";
 import {
   NavigationMenu,
   NavigationMenuItem,
