@@ -171,7 +171,7 @@ function ContentPageAnimated() {
                 <CardHeader className="text-center">
                   <CardTitle>Tailwind / Redux / Shadcn</CardTitle>
                   <CardDescription className="text-center h-16 sm:h-5">
-                    Making my app simple but elegant
+                    Making my apps simple but elegant
                   </CardDescription>
                 </CardHeader>
               </Card>
