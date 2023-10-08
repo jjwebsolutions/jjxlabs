@@ -136,13 +136,28 @@ function ContentPageAnimated() {
       rootMargin: "0% 0%",
     }
   );
+  const [ref8, springs8] = useInView(
+    () => ({
+      from: {
+        opacity: 0,
+        y: 100,
+      },
+      to: {
+        opacity: 1,
+        y: 0,
+      },
+    }),
+    {
+      rootMargin: "0% 0%",
+    }
+  );
   return (
     <>
       <div className=" flex flex-col items-center h-screen ">
         <animated.div className="" ref={ref7} style={springs7}>
           <CardHeader className="w-full items-center">
             <CardTitle className=" text-xl lg:text-3xl md:my-16 ">
-              The tech i love to code with
+              Technologies I utilize for coding
             </CardTitle>
             <CardDescription></CardDescription>
           </CardHeader>
@@ -152,17 +167,17 @@ function ContentPageAnimated() {
             <CardContent className="Card-Content w-full">
               <Card className="mt-5 pb-3 pt-1 card1">
                 <CardHeader className="text-center">
-                  <CardTitle>Javascript </CardTitle>
+                  <CardTitle>JavaScript</CardTitle>
                   <CardDescription className="text-center  h-16 sm:h-5">
-                    One of the best web computer language
+                    One of the best web programming languages
                   </CardDescription>
                 </CardHeader>
               </Card>
               <Card className="mt-5 pb-3 pt-1 card1">
                 <CardHeader className="text-center">
-                  <CardTitle className="">React / NodeJS</CardTitle>
+                  <CardTitle className="">React / Node.js</CardTitle>
                   <CardDescription className="text-center h-16 sm:h-5">
-                    Fast app with a nodeJS API and react components
+                    Fast apps with a Node.js API and React components
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -181,17 +196,17 @@ function ContentPageAnimated() {
             <CardContent className="Card-Content w-full">
               <Card className=" mt-5 pb-3 pt-1 card1">
                 <CardHeader className="text-center">
-                  <CardTitle className="">Typescript</CardTitle>
+                  <CardTitle className="">TypeScript</CardTitle>
                   <CardDescription className="text-center h-16 sm:h-5">
-                    Secured app with type safety
+                    Secure apps with type safety
                   </CardDescription>
                 </CardHeader>
               </Card>
               <Card className=" mt-5 pb-3 pt-1 card1">
                 <CardHeader className="items-center">
-                  <CardTitle className="">NextJS</CardTitle>
+                  <CardTitle className="">Next.js</CardTitle>
                   <CardDescription className="text-center h-16 sm:h-5">
-                    Server components
+                    Power of react with server components
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -200,7 +215,7 @@ function ContentPageAnimated() {
                 <CardHeader className="text-center">
                   <CardTitle>Prisma / Drizzle</CardTitle>
                   <CardDescription className="text-center h-16 sm:h-5">
-                    ORM for database work
+                    ORM for database operations
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -208,20 +223,18 @@ function ContentPageAnimated() {
           </animated.div>
         </div>
         <div className=" w-full hidden sm:flex text-center justify-center mt-16  p-10">
-          <Button className="buttonFadeIn">
-            <LinkScroll
-              className="text-center"
-              activeClass="active"
-              href="projects"
-              to="projects"
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
-            >
-              View some of my projects
-            </LinkScroll>
-          </Button>
+          <LinkScroll
+            className="text-center"
+            activeClass="active"
+            href="projects"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            <Button className="buttonFadeIn">View some of my projects</Button>
+          </LinkScroll>
         </div>
       </div>
       <Separator className="mt-10 mb-10" id="projects" />
@@ -241,8 +254,8 @@ function ContentPageAnimated() {
                 Tennis court reservation app
               </CardTitle>
               <CardDescription className="lg:hidden">
-                This app use credential authentification and allow you to check
-                if a session is available the day you want to reserve a court. I
+                This app use credential authentication and allow you to check if
+                a session is available the day you want to reserve a court. I
                 used NextJS, TypeScript, Tailwind, tRPC and Prisma to build this
                 app and a SQL database.
               </CardDescription>
@@ -267,23 +280,21 @@ function ContentPageAnimated() {
                 />
               </CardContent>
               <div className="text-xl p-10 font-bold space-y-5 text-center sm:w-1/4 w-1/2 lg:block hidden  ">
-                <p>Credential authentification</p>
+                <p>Credential authentication</p>
                 <p>Check sessions available for the day clicked</p>
                 <p>Reserve your session easily</p>
                 <p>Admin dashboard</p>
               </div>
             </div>
             <div className="flex justify-center p-5">
-              <Button className="">
-                <Link
-                  className="flex justify-center p-5"
-                  href="https://nextcourt.vercel.app/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Try it
-                </Link>
-              </Button>
+              <Link
+                className="flex justify-center p-5"
+                href="https://nextcourt.vercel.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Button className="">Try it</Button>
+              </Link>
             </div>
           </Card>
         </animated.div>
@@ -307,7 +318,7 @@ function ContentPageAnimated() {
                 <p>Prisma</p>
                 <p>Tailwind</p>
                 <p>Shadcn</p>
-                <p>Clerk</p>
+                <p>ClerkAuth</p>
               </div>
 
               <CardContent className="pt-5 hidden lg:block  w-2/4">
@@ -316,7 +327,7 @@ function ContentPageAnimated() {
                   width={700}
                   height={500}
                   src="https://i.goopics.net/y5thji.png"
-                  alt="screenshot of a beautiful e-commerce website"
+                  alt="screenshot of a beautiful e-commerce site"
                 />
               </CardContent>
               <div className="text-xl font-bold p-10 space-y-5 text-center sm:w-1/4 w-1/2  lg:block hidden  ">
@@ -327,16 +338,14 @@ function ContentPageAnimated() {
               </div>
             </div>
             <div className="flex justify-center p-5">
-              <Button className="">
-                <Link
-                  className="flex justify-center p-5"
-                  href="https://jjxstore-client.vercel.app/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Try it
-                </Link>
-              </Button>
+              <Link
+                className="flex justify-center p-5"
+                href="https://jjxstore-client.vercel.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Button className="">Try it</Button>
+              </Link>
             </div>
           </Card>
         </animated.div>
@@ -360,7 +369,7 @@ function ContentPageAnimated() {
                 <p>Prisma</p>
                 <p>Tailwind</p>
                 <p>Shadcn</p>
-                <p>Clerk</p>
+                <p>ClerkAuth</p>
               </div>
 
               <CardContent className="pt-5 hidden lg:block  w-2/4">
@@ -373,23 +382,21 @@ function ContentPageAnimated() {
                 />
               </CardContent>
               <div className="text-xl p-10 space-y-5 font-bold text-center sm:w-1/4 w-1/2   lg:block hidden ">
-                <p>Google authentification</p>
+                <p>Google authentication</p>
                 <p>Manage multiple stores</p>
                 <p>Add products to the stores</p>
                 <p>Manage the orders from your stores</p>
               </div>
             </div>
             <div className="flex justify-center p-5">
-              <Button>
-                <Link
-                  className="flex justify-center p-5"
-                  href="https://jjxstore-admin.vercel.app/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Try it
-                </Link>
-              </Button>
+              <Link
+                className="flex justify-center p-5"
+                href="https://jjxstore-admin.vercel.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Button>Try it</Button>
+              </Link>
             </div>
           </Card>
         </animated.div>
@@ -398,7 +405,7 @@ function ContentPageAnimated() {
             <CardHeader className="text-center">
               <CardTitle className="text-2xl">Reddit clone</CardTitle>
               <CardDescription className="lg:hidden">
-                This app use google authentification and allow you to create a
+                This app use google authentication and allow you to create a
                 community so you and others user can create post and interact
                 with them. I used NextJS, TypeScript, Tailwind and Prisma to
                 build this app and a SQL database.
@@ -423,32 +430,69 @@ function ContentPageAnimated() {
                 />
               </CardContent>
               <div className="text-xl p-10 space-y-5 font-bold text-center sm:w-1/4 w-1/2  lg:block hidden ">
-                <p>Google authentification</p>
+                <p>Google authentication</p>
                 <p>Create a community so people can join it</p>
                 <p>Add posts to the community so users can interact with it</p>
               </div>
             </div>
             <div className="flex justify-center p-5">
-              <Button className="">
-                <Link
-                  className="flex justify-center p-5"
-                  href="https://reddint.vercel.app/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Try it
-                </Link>
-              </Button>
+              <Link
+                className="flex justify-center p-5"
+                href="https://reddint.vercel.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Button className="">Try it</Button>
+              </Link>
             </div>
           </Card>
         </animated.div>
-        <Card className="w-4/4 mt-5">
-          <CardHeader id="payment">
-            <CardTitle>AI SaaS platform</CardTitle>
-            <CardDescription>Coming very soon.</CardDescription>
-          </CardHeader>
-          <CardContent></CardContent>
-        </Card>
+        <animated.div ref={ref8} style={springs8}>
+          <Card className="w-4/4 mt-5">
+            <CardHeader className="text-center">
+              <CardTitle className="text-2xl">Popop App</CardTitle>
+              <CardDescription className="">
+                Create and join events. Still in its very early phase!
+              </CardDescription>
+            </CardHeader>
+            <div className="flex    ">
+              <div className="text-xl font-bold p-10 space-y-5 lg:w-1/4 w-1/2 text-center  lg:block hidden ">
+                <p>Next.js</p>
+                <p>TypeScript</p>
+                <p>Drizzle</p>
+                <p>Tailwind</p>
+                <p>Shadcn</p>
+                <p>ClerkAuth</p>
+              </div>
+
+              <CardContent className="pt-5 hidden lg:block  w-2/4">
+                <Image
+                  className=" "
+                  width={700}
+                  height={500}
+                  src="https://i.goopics.net/pmevwl.png"
+                  alt="screenshot of a beautiful dashboard used to manage a store"
+                />
+              </CardContent>
+              <div className="text-xl p-10 space-y-5 font-bold text-center sm:w-1/4 w-1/2   lg:block hidden ">
+                <p>Google authentication</p>
+                <p>Manage multiple stores</p>
+                <p>Add products to the stores</p>
+                <p>Manage the orders from your stores</p>
+              </div>
+            </div>
+            <div className="flex justify-center p-5">
+              <Link
+                className="flex justify-center p-5"
+                href="https://popupapp.vercel.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Button>Try it</Button>
+              </Link>
+            </div>
+          </Card>
+        </animated.div>
       </CardContent>
     </>
   );

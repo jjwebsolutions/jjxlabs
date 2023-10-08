@@ -20,34 +20,30 @@ export function Header() {
         <NavigationMenu className="ml-5 md:justify-end md:mr-10">
           <NavigationMenuList className="space-x-2 md:space-x-8">
             <NavigationMenuItem>
-              <Button className="buttonFadeIn">
-                <LinkScroll
-                  activeClass="active"
-                  href="projects"
-                  to="projects"
-                  spy={true}
-                  smooth={true}
-                  offset={-30}
-                  duration={500}
-                >
-                  Projects
-                </LinkScroll>
-              </Button>
+              <LinkScroll
+                activeClass="active"
+                href="projects"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-30}
+                duration={500}
+              >
+                <Button className="buttonFadeIn">Projects</Button>
+              </LinkScroll>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Button className="buttonFadeIn">
-                <LinkScroll
-                  activeClass="active"
-                  href="about"
-                  to="about"
-                  spy={true}
-                  smooth={true}
-                  offset={-30}
-                  duration={500}
-                >
-                  About
-                </LinkScroll>
-              </Button>
+              <LinkScroll
+                activeClass="active"
+                href="about"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-30}
+                duration={500}
+              >
+                <Button className="buttonFadeIn">About</Button>
+              </LinkScroll>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>

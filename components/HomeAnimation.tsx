@@ -19,20 +19,18 @@ function HomeAnimation() {
         </div>
       </div>
       <div className="flex absolute bottom-0 left-0 right-0 text-center justify-center   p-10">
-        <Button className="buttonFadeIn">
-          <LinkScroll
-            className="text-center"
-            activeClass="active"
-            href="intro"
-            to="intro"
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={500}
-          >
-            View my work
-          </LinkScroll>
-        </Button>
+        <LinkScroll
+          className="text-center"
+          activeClass="active"
+          href="intro"
+          to="intro"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+        >
+          <Button className="buttonFadeIn">View my work</Button>
+        </LinkScroll>
       </div>
     </>
   );
