@@ -42,7 +42,7 @@ export function Header() {
                 offset={-30}
                 duration={500}
               >
-                <Button className="buttonFadeIn">About</Button>
+                <Button className="buttonFadeIn">Contact</Button>
               </LinkScroll>
             </NavigationMenuItem>
           </NavigationMenuList>
