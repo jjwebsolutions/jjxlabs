@@ -25,14 +25,14 @@ function ContactContent() {
           <Card className="w-4/4 mt-5 card1 flex justify-center flex-col items-center">
             <CardHeader className="text-center">
               <CardTitle>
-                If you're considering a collaboration or partnership, please
-                reach out. I'm also actively searching for internship
-                opportunities.
+                If you&apos;re considering a collaboration or partnership,
+                please reach out. I&apos;m also actively searching for
+                internship opportunities.
               </CardTitle>
             </CardHeader>
             <div className="text-center">
               <CardContent className="sm:pt-6 ">
-                I&apos;m located in Paris, but I'm open to remote work.
+                I&apos;m located in Paris, but I&apos;m open to remote work.
               </CardContent>
             </div>
           </Card>

@@ -14,7 +14,6 @@ export default function Home() {
       </div>
       <Separator className="mt-10 mb-10" id="intro" />
       <ContentPageAnimated />
-
       <Separator className="mt-20 mb-10" />
       <ContactContent />
     </main>
