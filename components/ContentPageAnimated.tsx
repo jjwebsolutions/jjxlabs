@@ -451,9 +451,7 @@ function ContentPageAnimated() {
           <Card className="w-4/4 mt-5">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl">Popop App</CardTitle>
-              <CardDescription className="">
-                Create and join events. Still in its very early phase!
-              </CardDescription>
+              <CardDescription className="">Very early phase!</CardDescription>
             </CardHeader>
             <div className="flex    ">
               <div className="text-xl font-bold p-10 space-y-5 lg:w-1/4 w-1/2 text-center  lg:block hidden ">
@@ -476,9 +474,8 @@ function ContentPageAnimated() {
               </CardContent>
               <div className="text-xl p-10 space-y-5 font-bold text-center sm:w-1/4 w-1/2   lg:block hidden ">
                 <p>Google authentication</p>
-                <p>Manage multiple stores</p>
-                <p>Add products to the stores</p>
-                <p>Manage the orders from your stores</p>
+                <p>Create and join events</p>
+                <p>More features coming</p>
               </div>
             </div>
             <div className="flex justify-center p-5">
