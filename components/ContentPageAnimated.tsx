@@ -275,7 +275,7 @@ function ContentPageAnimated() {
                   className=" "
                   width={700}
                   height={500}
-                  src="https://i.goopics.net/v9bqb3.png"
+                  src="https://i.ibb.co/3T2mVV0/demo-tennis-court-gif.gif"
                   alt="screenshot of a beautiful website use for reservation"
                 />
               </CardContent>
