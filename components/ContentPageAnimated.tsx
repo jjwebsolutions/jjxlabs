@@ -295,6 +295,14 @@ function ContentPageAnimated() {
               >
                 <Button className="">Try it</Button>
               </Link>
+              <Link
+                className="flex justify-center p-5"
+                href="https://github.com/julienata/nextcourt"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Button className="">Github</Button>
+              </Link>
             </div>
           </Card>
         </animated.div>
@@ -345,6 +353,14 @@ function ContentPageAnimated() {
                 target="_blank"
               >
                 <Button className="">Try it</Button>
+              </Link>
+              <Link
+                className="flex justify-center p-5"
+                href="https://github.com/julienata/jjxmarket-client"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Button className="">Github</Button>
               </Link>
             </div>
           </Card>
@@ -397,6 +413,14 @@ function ContentPageAnimated() {
               >
                 <Button>Try it</Button>
               </Link>
+              <Link
+                className="flex justify-center p-5"
+                href="https://github.com/julienata/jjxstore-admin"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Button>Github</Button>
+              </Link>
             </div>
           </Card>
         </animated.div>
@@ -444,6 +468,14 @@ function ContentPageAnimated() {
               >
                 <Button className="">Try it</Button>
               </Link>
+              <Link
+                className="flex justify-center p-5"
+                href="https://github.com/julienata/redditclone"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Button className="">Github</Button>
+              </Link>
             </div>
           </Card>
         </animated.div>
@@ -486,6 +518,14 @@ function ContentPageAnimated() {
                 target="_blank"
               >
                 <Button>Try it</Button>
+              </Link>
+              <Link
+                className="flex justify-center p-5"
+                href="https://github.com/julienata/popupapp"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Button>Github</Button>
               </Link>
             </div>
           </Card>
