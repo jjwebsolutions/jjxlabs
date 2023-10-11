@@ -334,7 +334,7 @@ function ContentPageAnimated() {
                   className=" "
                   width={700}
                   height={500}
-                  src="https://i.goopics.net/y5thji.png"
+                  src="https://i.ibb.co/7ypKpkv/demo-market-client-gif.gif"
                   alt="screenshot of a beautiful e-commerce site"
                 />
               </CardContent>

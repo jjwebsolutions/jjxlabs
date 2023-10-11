@@ -5,6 +5,7 @@ import * as React from "react";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "./ui/button";
 import { Link as LinkScroll, animateScroll as scroll } from "react-scroll";
+import Link from "next/link";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -44,6 +45,11 @@ export function Header() {
               >
                 <Button className="buttonFadeIn">Contact</Button>
               </LinkScroll>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <a target="_blank" href="https://github.com/julienata">
+                <Button className="buttonFadeIn">Github</Button>
+              </a>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
