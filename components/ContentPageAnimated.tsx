@@ -184,7 +184,7 @@ function ContentPageAnimated() {
 
               <Card className=" mt-5 pb-3 pt-1 card3">
                 <CardHeader className="text-center">
-                  <CardTitle>Tailwind / Shadcn</CardTitle>
+                  <CardTitle>Tailwind / Radix / Shadcn</CardTitle>
                   <CardDescription className="text-center h-16 sm:h-5">
                     Making my apps simple but elegant
                   </CardDescription>
