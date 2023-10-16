@@ -163,8 +163,8 @@ function ContentPageAnimated() {
           </CardHeader>
         </animated.div>
         <div className="flex w-full ">
-          <animated.div className="w-1/2" ref={ref6} style={springs6}>
-            <CardContent className="Card-Content w-full">
+          <animated.div className="w-1/2 " ref={ref6} style={springs6}>
+            <CardContent className="Card-Content w-full hidden lg:block">
               <Card className="mt-5 pb-3 pt-1 card1">
                 <CardHeader className="text-center">
                   <CardTitle>JavaScript</CardTitle>
@@ -192,8 +192,35 @@ function ContentPageAnimated() {
               </Card>
             </CardContent>
           </animated.div>
-          <animated.div className="w-1/2" ref={ref5} style={springs5}>
-            <CardContent className="Card-Content w-full">
+          <CardContent className="Card-Content w-full lg:hidden ">
+            <Card className="mt-5 pb-3 pt-1 card1">
+              <CardHeader className="text-center">
+                <CardTitle>JavaScript</CardTitle>
+                <CardDescription className="text-center  h-16 sm:h-5">
+                  One of the best web programming languages
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="mt-5 pb-3 pt-1 card1">
+              <CardHeader className="text-center">
+                <CardTitle className="">React / Node.js</CardTitle>
+                <CardDescription className="text-center h-16 sm:h-5">
+                  Fast apps with a Node.js API and React components
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className=" mt-5 pb-3 pt-1 card3">
+              <CardHeader className="text-center">
+                <CardTitle>Tailwind / Radix / Shadcn</CardTitle>
+                <CardDescription className="text-center h-16 sm:h-5">
+                  Making my apps simple but elegant
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </CardContent>
+          <animated.div className="w-1/2 " ref={ref5} style={springs5}>
+            <CardContent className="Card-Content  hidden lg:block w-full">
               <Card className=" mt-5 pb-3 pt-1 card1">
                 <CardHeader className="text-center">
                   <CardTitle className="">TypeScript</CardTitle>
@@ -221,6 +248,33 @@ function ContentPageAnimated() {
               </Card>
             </CardContent>
           </animated.div>
+          <CardContent className="Card-Content  lg:hidden  w-full">
+            <Card className=" mt-5 pb-3 pt-1 card1">
+              <CardHeader className="text-center">
+                <CardTitle className="">TypeScript</CardTitle>
+                <CardDescription className="text-center h-16 sm:h-5">
+                  Secure apps with type safety
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className=" mt-5 pb-3 pt-1 card1">
+              <CardHeader className="items-center">
+                <CardTitle className="">Next.js</CardTitle>
+                <CardDescription className="text-center h-16 sm:h-5">
+                  Power of react with server components
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="mt-5 pb-3 pt-1 card3">
+              <CardHeader className="text-center">
+                <CardTitle>Prisma / Drizzle</CardTitle>
+                <CardDescription className="text-center h-16 sm:h-5">
+                  ORM for database operations
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </CardContent>
         </div>
         <div className=" w-full hidden sm:flex text-center justify-center mt-16  p-10">
           <LinkScroll
