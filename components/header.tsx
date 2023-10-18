@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-
+import TypewriterEffect from "./TypewritterEffect";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "./ui/button";
 import { Link as LinkScroll, animateScroll as scroll } from "react-scroll";
@@ -19,7 +19,7 @@ export function Header() {
     <>
       <div className="container flex  items-center mx-auto mt-5">
         <NavigationMenu className="ml-5 md:justify-end md:mr-10">
-          <NavigationMenuList className="space-x-2 md:space-x-8">
+          <NavigationMenuList className="space-x-2 md:space-x-8 ">
             <NavigationMenuItem>
               <LinkScroll
                 activeClass="active"
@@ -30,7 +30,9 @@ export function Header() {
                 offset={-30}
                 duration={500}
               >
-                <Button className="buttonFadeIn">Projects</Button>
+                <Button className="buttonFadeIn">
+                  <TypewriterEffect text="Projects" />
+                </Button>
               </LinkScroll>
             </NavigationMenuItem>
             <NavigationMenuItem>
@@ -43,12 +45,17 @@ export function Header() {
                 offset={-30}
                 duration={500}
               >
-                <Button className="buttonFadeIn">Contact</Button>
+                <Button className="buttonFadeIn">
+                  {" "}
+                  <TypewriterEffect text="Contact" />
+                </Button>
               </LinkScroll>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <a target="_blank" href="https://github.com/julienata">
-                <Button className="buttonFadeIn">Github</Button>
+                <Button className="buttonFadeIn">
+                  <TypewriterEffect text="Github" />
+                </Button>
               </a>
             </NavigationMenuItem>
           </NavigationMenuList>

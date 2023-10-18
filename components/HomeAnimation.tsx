@@ -2,9 +2,10 @@ import React from "react";
 
 import TrailAnimation from "@/components/trailAnimation";
 import TrailAnimation2 from "@/components/trailAnimation2";
-
+import TrailAnimation3 from "./trailAnimation3";
+import TypewriterEffect from "./TypewritterEffect";
 import { Link as LinkScroll } from "react-scroll";
-
+import TypewriterEffectRandom from "./TypewritterEffectRandomStart";
 import { Button } from "@/components/ui/button";
 
 function HomeAnimation() {
@@ -29,7 +30,9 @@ function HomeAnimation() {
           offset={-50}
           duration={500}
         >
-          <Button className="buttonFadeIn">View my work</Button>
+          <Button className="buttonFadeIn">
+            <TypewriterEffect text="View my work" />
+          </Button>
         </LinkScroll>
       </div>
     </>

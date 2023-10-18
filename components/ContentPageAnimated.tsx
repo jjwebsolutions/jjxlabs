@@ -20,6 +20,7 @@ import TrailAnimation2 from "@/components/trailAnimation2";
 import HomeAnimation from "@/components/HomeAnimation";
 import { Button } from "@/components/ui/button";
 import scrollToTop from "@/components/scrollToTop";
+import TypewriterEffect from "./TypewritterEffect";
 
 function ContentPageAnimated() {
   const [ref, springs] = useInView(
@@ -167,7 +168,9 @@ function ContentPageAnimated() {
             <CardContent className="Card-Content w-full hidden lg:block">
               <Card className="mt-5 pb-3 pt-1 card1">
                 <CardHeader className="text-center">
-                  <CardTitle>JavaScript</CardTitle>
+                  <CardTitle className="flex justify-center">
+                    <TypewriterEffect text="JavaScript" />
+                  </CardTitle>
                   <CardDescription className="text-center  h-16 sm:h-5">
                     One of the best web programming languages
                   </CardDescription>
@@ -175,7 +178,9 @@ function ContentPageAnimated() {
               </Card>
               <Card className="mt-5 pb-3 pt-1 card1">
                 <CardHeader className="text-center">
-                  <CardTitle className="">React / Node.js</CardTitle>
+                  <CardTitle className="flex justify-center">
+                    <TypewriterEffect text="React / Node.js" />
+                  </CardTitle>
                   <CardDescription className="text-center h-16 sm:h-5">
                     Fast apps with a Node.js API and React components
                   </CardDescription>
@@ -184,7 +189,9 @@ function ContentPageAnimated() {
 
               <Card className=" mt-5 pb-3 pt-1 card3">
                 <CardHeader className="text-center">
-                  <CardTitle>Tailwind / Radix / Shadcn</CardTitle>
+                  <CardTitle className="flex justify-center">
+                    <TypewriterEffect text="Tailwind / Radix / Shadcn " />
+                  </CardTitle>
                   <CardDescription className="text-center h-16 sm:h-5">
                     Making my apps simple but elegant
                   </CardDescription>
@@ -223,15 +230,20 @@ function ContentPageAnimated() {
             <CardContent className="Card-Content  hidden lg:block w-full">
               <Card className=" mt-5 pb-3 pt-1 card1">
                 <CardHeader className="text-center">
-                  <CardTitle className="">TypeScript</CardTitle>
+                  <CardTitle className="flex justify-center">
+                    <TypewriterEffect text="TypeScript" />
+                  </CardTitle>
                   <CardDescription className="text-center h-16 sm:h-5">
                     Secure apps with type safety
                   </CardDescription>
                 </CardHeader>
               </Card>
+
               <Card className=" mt-5 pb-3 pt-1 card1">
-                <CardHeader className="items-center">
-                  <CardTitle className="">Next.js</CardTitle>
+                <CardHeader className="text-center">
+                  <CardTitle className="flex justify-center">
+                    <TypewriterEffect text="Next.js" />
+                  </CardTitle>
                   <CardDescription className="text-center h-16 sm:h-5">
                     Power of react with server components
                   </CardDescription>
@@ -240,7 +252,9 @@ function ContentPageAnimated() {
 
               <Card className="mt-5 pb-3 pt-1 card3">
                 <CardHeader className="text-center">
-                  <CardTitle>Prisma / Drizzle</CardTitle>
+                  <CardTitle className="flex justify-center">
+                    <TypewriterEffect text="Prisma / Drizzle" />
+                  </CardTitle>
                   <CardDescription className="text-center h-16 sm:h-5">
                     ORM for database operations
                   </CardDescription>
@@ -251,15 +265,17 @@ function ContentPageAnimated() {
           <CardContent className="Card-Content  lg:hidden  w-full">
             <Card className=" mt-5 pb-3 pt-1 card1">
               <CardHeader className="text-center">
-                <CardTitle className="">TypeScript</CardTitle>
+                <CardTitle className="flex justify-center">
+                  TypeScript
+                </CardTitle>
                 <CardDescription className="text-center h-16 sm:h-5">
                   Secure apps with type safety
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card className=" mt-5 pb-3 pt-1 card1">
+            <Card className=" mt-5 pb-3 pt-1 card1 ">
               <CardHeader className="items-center">
-                <CardTitle className="">Next.js</CardTitle>
+                <CardTitle className="flex justify-center">Next.js</CardTitle>
                 <CardDescription className="text-center h-16 sm:h-5">
                   Power of react with server components
                 </CardDescription>
@@ -287,7 +303,9 @@ function ContentPageAnimated() {
             offset={-50}
             duration={500}
           >
-            <Button className="buttonFadeIn">View some of my projects</Button>
+            <Button className="buttonFadeIn">
+              <TypewriterEffect text="View some of my projects" />
+            </Button>
           </LinkScroll>
         </div>
       </div>
