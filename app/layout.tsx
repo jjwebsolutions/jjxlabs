@@ -13,7 +13,7 @@ export const metadata = {
   keywords:
     "web agency, web solutions, website development, e-commerce development, digital marketing,agence web, solutions web, développerment de sites web, développement d'e-commerce, marketing numérique ",
   author: "jjxlabs",
-  creator: "Julien A",
+  creator: "Julien Atanassov",
 };
 
 export default function RootLayout({
