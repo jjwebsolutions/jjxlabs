@@ -152,6 +152,21 @@ function ContentPageAnimated() {
       rootMargin: "0% 0%",
     }
   );
+  const [ref9, springs9] = useInView(
+    () => ({
+      from: {
+        opacity: 0,
+        y: 100,
+      },
+      to: {
+        opacity: 1,
+        y: 0,
+      },
+    }),
+    {
+      rootMargin: "0% 0%",
+    }
+  );
   return (
     <>
       <div className=" flex flex-col items-center h-screen ">
@@ -586,6 +601,55 @@ function ContentPageAnimated() {
               <Link
                 className="flex justify-center p-5"
                 href="https://github.com/julienata/popupapp"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Button>Github</Button>
+              </Link>
+            </div>
+          </Card>
+        </animated.div>
+        <animated.div ref={ref9} style={springs9}>
+          <Card className="w-4/4 mt-5">
+            <CardHeader className="text-center">
+              <CardTitle className="text-2xl">Sport Bot</CardTitle>
+            </CardHeader>
+            <div className="flex    ">
+              <div className="text-xl font-bold p-10 space-y-5 lg:w-1/4 w-1/2 text-center  lg:block hidden ">
+                <p>Next.js</p>
+                <p>TypeScript</p>
+                <p>Tailwind</p>
+                <p>Shadcn</p>
+                <p>ClerkAuth</p>
+              </div>
+
+              <CardContent className="pt-5 hidden lg:block  w-2/4">
+                <Image
+                  className=" "
+                  width={700}
+                  height={500}
+                  src="https://i.goopics.net/ldoq55.png"
+                  alt="screenshot of a beautiful chatbot about sports"
+                />
+              </CardContent>
+              <div className="text-xl p-10 space-y-5 font-bold text-center sm:w-1/4 w-1/2   lg:block hidden ">
+                <p>Google authentication</p>
+                <p>Ask question to a chatbot about your favorite sport</p>
+                <p>Anwsers generate by Chatgpt</p>
+              </div>
+            </div>
+            <div className="flex justify-center p-5">
+              <Link
+                className="flex justify-center p-5"
+                href="https://sportbot.vercel.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Button>Try it</Button>
+              </Link>
+              <Link
+                className="flex justify-center p-5"
+                href="https://github.com/julienata/sportbot"
                 rel="noopener noreferrer"
                 target="_blank"
               >
