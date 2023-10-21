@@ -361,14 +361,6 @@ function ContentPageAnimated() {
             <div className="flex justify-center p-5">
               <Link
                 className="flex justify-center p-5"
-                href="https://nextcourt.vercel.app/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <Button className="">Try it</Button>
-              </Link>
-              <Link
-                className="flex justify-center p-5"
                 href="https://github.com/julienata/nextcourt"
                 rel="noopener noreferrer"
                 target="_blank"
