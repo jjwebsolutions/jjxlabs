@@ -380,7 +380,9 @@ function ContentPageAnimated() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Button className="">Github</Button>
+                <Button size={"lg"} className="">
+                  Github
+                </Button>
               </Link>
             </div>
           </Card>
@@ -426,12 +428,12 @@ function ContentPageAnimated() {
             </div>
             <div className="flex justify-center p-5">
               <Link
-                className="flex justify-center p-5"
+                className="flex justify-center p-5 "
                 href="https://jjxstore-client.vercel.app/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Button className="">Try it</Button>
+                <Button size={"lg"}>Try it</Button>
               </Link>
               <Link
                 className="flex justify-center p-5"
@@ -439,7 +441,9 @@ function ContentPageAnimated() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Button className="">Github</Button>
+                <Button size={"lg"} className="">
+                  Github
+                </Button>
               </Link>
             </div>
           </Card>
@@ -490,7 +494,7 @@ function ContentPageAnimated() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Button>Try it</Button>
+                <Button size={"lg"}>Try it</Button>
               </Link>
               <Link
                 className="flex justify-center p-5"
@@ -498,7 +502,7 @@ function ContentPageAnimated() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Button>Github</Button>
+                <Button size={"lg"}>Github</Button>
               </Link>
             </div>
           </Card>
@@ -545,7 +549,9 @@ function ContentPageAnimated() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Button className="">Try it</Button>
+                <Button size={"lg"} className="">
+                  Try it
+                </Button>
               </Link>
               <Link
                 className="flex justify-center p-5"
@@ -553,7 +559,9 @@ function ContentPageAnimated() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Button className="">Github</Button>
+                <Button size={"lg"} className="">
+                  Github
+                </Button>
               </Link>
             </div>
           </Card>
@@ -596,7 +604,7 @@ function ContentPageAnimated() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Button>Try it</Button>
+                <Button size={"lg"}>Try it</Button>
               </Link>
               <Link
                 className="flex justify-center p-5"
@@ -604,7 +612,7 @@ function ContentPageAnimated() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Button>Github</Button>
+                <Button size={"lg"}>Github</Button>
               </Link>
             </div>
           </Card>
@@ -645,7 +653,7 @@ function ContentPageAnimated() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Button>Try it</Button>
+                <Button size={"lg"}>Try it</Button>
               </Link>
               <Link
                 className="flex justify-center p-5"
@@ -653,7 +661,7 @@ function ContentPageAnimated() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Button>Github</Button>
+                <Button size={"lg"}>Github</Button>
               </Link>
             </div>
           </Card>
