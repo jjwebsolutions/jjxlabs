@@ -17,8 +17,8 @@ import {
 export function Header() {
   return (
     <>
-      <div className="container flex  items-center mx-auto mt-5">
-        <NavigationMenu className="ml-5 md:justify-end md:mr-10">
+      <div className=" flex  items-center mx-auto mt-5">
+        <NavigationMenu className="lg:ml-5 md:justify-end md:mr-10">
           <NavigationMenuList className="space-x-2 md:space-x-8 ">
             <NavigationMenuItem>
               <LinkScroll

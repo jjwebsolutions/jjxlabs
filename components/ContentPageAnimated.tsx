@@ -169,7 +169,7 @@ function ContentPageAnimated() {
   );
   return (
     <>
-      <div className=" flex flex-col items-center h-screen ">
+      <div className=" flex flex-col items-center h-screen  ">
         <animated.div className="" ref={ref7} style={springs7}>
           <CardHeader className="w-full items-center">
             <CardTitle className=" text-xl lg:text-3xl md:my-16 ">
@@ -178,7 +178,7 @@ function ContentPageAnimated() {
             <CardDescription></CardDescription>
           </CardHeader>
         </animated.div>
-        <div className="flex w-full ">
+        <div className="flex w-full">
           <animated.div className="w-1/2 " ref={ref6} style={springs6}>
             <CardContent className="Card-Content w-full hidden lg:block">
               <Card className="mt-5 pb-3 pt-1 card1">
