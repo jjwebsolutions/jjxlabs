@@ -4,6 +4,8 @@ import { Header } from "@/components/header";
 import { Analytics } from "@vercel/analytics/react";
 
 import { ThemeProvider } from "@/components/theme-provider";
+import { GeistSans, GeistMono } from "geist/font";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -23,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={GeistSans.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Header />
           {children}
