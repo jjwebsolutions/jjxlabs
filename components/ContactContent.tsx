@@ -26,8 +26,7 @@ function ContactContent() {
             <CardHeader className="text-center">
               <CardTitle>
                 If you&apos;re considering a collaboration or partnership,
-                please reach out. I&apos;m also actively searching for
-                internship opportunities.
+                please reach out.
               </CardTitle>
             </CardHeader>
             <div className="text-center">
@@ -42,8 +41,8 @@ function ContactContent() {
             </CardHeader>
             <div className="flex justify-between">
               <CardContent className="pt-6">
-                <p>Julien Atanassov</p>
-                <p>atanassov.julien@gmail.com</p>
+                <p>Julien A</p>
+                <p>jj.websolutions@proton.me</p>
               </CardContent>
             </div>
           </Card>
