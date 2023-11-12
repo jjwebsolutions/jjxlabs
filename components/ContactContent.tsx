@@ -25,8 +25,7 @@ function ContactContent() {
           <Card className="w-4/4 mt-5 card1 flex justify-center flex-col items-center">
             <CardHeader className="text-center">
               <CardTitle>
-                If you&apos;re considering a collaboration or partnership,
-                please reach out.
+                I'm actually working at the moment but feel free to reach out
               </CardTitle>
             </CardHeader>
             <div className="text-center">

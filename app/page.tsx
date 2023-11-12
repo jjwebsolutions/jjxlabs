@@ -13,7 +13,7 @@ export default function Home() {
         <HomeAnimation />
       </div>
       <Separator className="mt-10 mb-10" id="intro" />
-      {/* <ContentPageAnimated /> */}
+      <ContentPageAnimated />
       <Separator className="mt-20 mb-10" />
       <ContactContent />
     </main>
