@@ -334,109 +334,12 @@ function ContentPageAnimated() {
       </animated.div>
 
       <CardContent className="cardContent2 p-0 space-y-10">
-        <animated.div ref={ref} style={springs}>
-          <Card className="w-4/4 mt-5">
-            <CardHeader className="text-center">
-              <CardTitle className="text-2xl">
-                Tennis court reservation app
-              </CardTitle>
-              <CardDescription className="lg:hidden">
-                This app use credential authentication and allow you to check if
-                a session is available the day you want to reserve a court. I
-                used NextJS, TypeScript, Tailwind, tRPC and Prisma to build this
-                app and a SQL database.
-              </CardDescription>
-            </CardHeader>
-            <div className="flex">
-              <div className="text-xl font-bold p-10 space-y-5 lg:w-1/4 w-1/2 text-center lg:block hidden">
-                <p>Next.js</p>
-                <p>TypeScript</p>
-                <p>tRPC</p>
-                <p>Prisma</p>
-                <p>Tailwind</p>
-                <p>NextAuth</p>
-              </div>
-
-              <CardContent className="pt-5 hidden lg:block  w-2/4">
-                <Image
-                  className=" "
-                  width={700}
-                  height={500}
-                  src="https://i.ibb.co/3T2mVV0/demo-tennis-court-gif.gif"
-                  alt="screenshot of a beautiful website use for reservation"
-                />
-              </CardContent>
-              <div className="text-xl p-10 font-bold space-y-5 text-center sm:w-1/4 w-1/2 lg:block hidden  ">
-                <p>Credential authentication</p>
-                <p>Check sessions available for the day clicked</p>
-                <p>Reserve your session easily</p>
-                <p>Admin dashboard</p>
-              </div>
-            </div>
-            <div className="flex justify-center p-5">
-              <Link
-                className="flex justify-center p-5"
-                href="https://github.com/julienata/nextcourt"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <Button size={"lg"} className="">
-                  Github
-                </Button>
-              </Link>
-            </div>
-          </Card>
-        </animated.div>
-
         <animated.div ref={ref8} style={springs8}>
           <Card className="w-4/4 mt-5">
             <CardHeader className="text-center">
-              <CardTitle className="text-2xl">Popop App</CardTitle>
-              <CardDescription className="">Very early phase!</CardDescription>
+              <CardTitle className="text-2xl">Building...</CardTitle>
+              <CardDescription className=""></CardDescription>
             </CardHeader>
-            <div className="flex    ">
-              <div className="text-xl font-bold p-10 space-y-5 lg:w-1/4 w-1/2 text-center  lg:block hidden ">
-                <p>Next.js</p>
-                <p>TypeScript</p>
-                <p>Drizzle</p>
-                <p>Tailwind</p>
-                <p>Shadcn</p>
-                <p>ClerkAuth</p>
-              </div>
-
-              <CardContent className="pt-5 hidden lg:block  w-2/4">
-                <Image
-                  className=" "
-                  width={700}
-                  height={500}
-                  src="https://i.goopics.net/pmevwl.png"
-                  alt="screenshot of a beautiful dashboard used to manage a store"
-                />
-              </CardContent>
-              <div className="text-xl p-10 space-y-5 font-bold text-center sm:w-1/4 w-1/2   lg:block hidden ">
-                <p>Google authentication</p>
-                <p>Create and join events</p>
-                <p>More features coming</p>
-              </div>
-            </div>
-            <div className="flex justify-center p-5">
-              <Link
-                className="flex justify-center p-5"
-                href="https://popupapp.vercel.app/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <Button size={"lg"}>Try it</Button>
-              </Link>
-              <Link
-                className="flex justify-center p-5"
-                href="https://github.com/julienata/popupapp"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <Button size={"lg"}>Github</Button>
-              </Link>
-            </div>
           </Card>
         </animated.div>
       </CardContent>
