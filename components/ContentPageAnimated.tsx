@@ -337,7 +337,7 @@ function ContentPageAnimated() {
         <animated.div ref={ref8} style={springs8}>
           <Card className="w-4/4 mt-5">
             <CardHeader className="text-center">
-              <CardTitle className="text-2xl">Building...</CardTitle>
+              <CardTitle className="text-2xl">Always building..</CardTitle>
               <CardDescription className=""></CardDescription>
             </CardHeader>
           </Card>
