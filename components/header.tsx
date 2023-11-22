@@ -51,13 +51,6 @@ export function Header() {
                 </Button>
               </LinkScroll>
             </NavigationMenuItem>
-            <NavigationMenuItem>
-              <a target="_blank" href="https://github.com/julienata">
-                <Button className="buttonFadeIn">
-                  <TypewriterEffect text="Github" />
-                </Button>
-              </a>
-            </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
         <div className="buttonFadeIn">
