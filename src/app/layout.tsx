@@ -19,8 +19,8 @@ const fontBody = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "jjx Web Development",
-    template: "%s | jjx Web Development",
+    default: "jjx",
+    template: "%s | jjx",
   },
   description:
     "From static websites to complex web applications, jjx delivers tailored solutions to help your business thrive online.",
