@@ -12,6 +12,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
+import { Textarea } from "./ui/textarea";
 
 async function submitContact(formData: FormData) {
   "use server";
@@ -150,7 +151,7 @@ export function Main() {
                   name="email"
                   required
                 />
-                <textarea
+                <Textarea
                   className="w-full"
                   placeholder="Your message (optional)"
                   name="message"
