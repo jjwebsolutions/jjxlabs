@@ -1,12 +1,38 @@
 import { NextResponse } from "next/server";
-import { submitContact } from "@/actions/contact";
-export async function POST(request: Request) {
-  const formData = await request.formData();
-  const result = await submitContact(formData);
+import nodemailer from "nodemailer";
 
-  if (!result) {
-    return NextResponse.json({ error: result }, { status: 400 });
+export async function POST(req: Request) {
+  const { email, message } = await req.json();
+
+  // Create a transporter using Gmail SMTP
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS,
+    },
+  });
+
+  // Email options
+  const mailOptions = {
+    from: process.env.GMAIL_USER,
+    to: process.env.GMAIL_USER, // Send to yourself
+    subject: "New Contact Form Submission",
+    text: `Email: ${email}\nMessage: ${message}`,
+  };
+
+  try {
+    // Send email
+    await transporter.sendMail(mailOptions);
+    return NextResponse.json(
+      { message: "Email sent successfully" },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error("Error sending email:", error);
+    return NextResponse.json(
+      { error: "Failed to send email" },
+      { status: 500 }
+    );
   }
-
-  return NextResponse.json({ message: result.success });
 }
