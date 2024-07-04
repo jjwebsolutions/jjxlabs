@@ -153,7 +153,7 @@ export function Main() {
                 />
                 <Textarea
                   className="w-full"
-                  placeholder="Your message (optional)"
+                  placeholder="Your message"
                   name="message"
                   rows={4}
                 />
