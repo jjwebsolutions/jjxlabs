@@ -136,8 +136,8 @@ export function Main() {
                 Ready to Elevate Your Web Presence?
               </h2>
               <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Let's discuss your project and create a web solution that drives
-                your business forward.
+                Let&apos;s discuss your project and create a web solution that
+                drives your business forward.
               </p>
             </div>
             <div className="mx-auto w-full max-w-sm space-y-2">
