@@ -11,7 +11,6 @@ export const metadata = {
 export default function PrivacyPolicy() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <Header />
       <main className="flex-1 container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
         <div className="space-y-4">
