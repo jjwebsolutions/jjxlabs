@@ -19,7 +19,7 @@ export function Main() {
       <main className="flex-1">
         <section
           id="home"
-          className="w-full py-12 md:py-24 lg:py-32 xl:py-48 pt-20 min-h-[100dvh] "
+          className="w-full py-12 md:py-24 lg:py-32 xl:py-48 pt-20 min-h-[100dvh]  flex items-center"
         >
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
@@ -46,7 +46,7 @@ export function Main() {
 
         <section
           id="services"
-          className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800"
+          className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800 min-h-[80dvh] flex items-center"
         >
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">
@@ -92,7 +92,7 @@ export function Main() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32">
+        <section className="w-full py-12 md:py-24 lg:py-32  min-h-[80dvh] flex items-center">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">
               Why Choose Me?
