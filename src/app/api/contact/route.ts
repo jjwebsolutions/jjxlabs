@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-export async function POST(req: Request) {
-  const { email, message } = await req.json();
+export async function POST(request: Request) {
+  const { email, message } = await request.json();
 
   // Create a transporter using Gmail SMTP
   const transporter = nodemailer.createTransport({
@@ -31,7 +31,7 @@ export async function POST(req: Request) {
   } catch (error) {
     console.error("Error sending email:", error);
     return NextResponse.json(
-      { error: "Failed to send email" },
+      { message: "Failed to send email" },
       { status: 500 }
     );
   }

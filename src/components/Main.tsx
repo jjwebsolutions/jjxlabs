@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import { redirect } from "next/navigation";
@@ -13,43 +14,37 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
 import { Textarea } from "./ui/textarea";
-
-async function submitContact(formData: FormData) {
-  "use server";
-
-  const email = formData.get("email") as string;
-  const message = formData.get("message") as string;
-
-  // Create a transporter using Gmail SMTP
-  const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_PASS,
-    },
-  });
-
-  // Email options
-  const mailOptions = {
-    from: process.env.GMAIL_USER,
-    to: process.env.GMAIL_USER, // Send to yourself
-    subject: "New Contact Form Submission",
-    text: `Email: ${email}\nMessage: ${message}`,
-  };
-
-  try {
-    // Send email
-    await transporter.sendMail(mailOptions);
-    redirect("/?message=Email sent successfully");
-  } catch (error) {
-    console.error("Error sending email:", error);
-    redirect("/?message=Failed to send email. Please try again.");
-  }
-}
+import Notification from "./Notification";
+import { toast } from "sonner";
 
 export function Main() {
+  async function submitContact(formData: FormData) {
+    const email = formData.get("email") as string;
+    const message = formData.get("message") as string;
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, message }),
+      });
+
+      if (response.ok) {
+        toast("Email sent successfully");
+      } else {
+        toast("Failed to send email. Please try again.");
+      }
+    } catch (error) {
+      toast("Failed to send email. Please try again.");
+      console.error("Error sending email:", error);
+    }
+  }
+
   return (
     <div className="flex flex-col min-h-[100dvh]">
+      <Notification />
       <Header />
       <main className="flex-1">
         <section
@@ -130,7 +125,7 @@ export function Main() {
 
         <section
           id="contact"
-          className="w-full py-12 md:py-24 lg:py-32 border-t  "
+          className="w-full py-12 md:py-24 lg:py-32 border-t"
         >
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
             <div className="space-y-3">
@@ -156,6 +151,7 @@ export function Main() {
                   placeholder="Your message"
                   name="message"
                   rows={4}
+                  required
                 />
                 <Button type="submit" className="w-full">
                   Contact Me

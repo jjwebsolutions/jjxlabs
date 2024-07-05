@@ -2,6 +2,7 @@ import { IBM_Plex_Mono } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 import { Metadata } from "next";
+import { Toaster } from "@/components/ui/sonner";
 
 const fontHeading = IBM_Plex_Mono({
   subsets: ["latin"],
@@ -79,7 +80,8 @@ export default function RootLayout({
       <body
         className={cn("antialiased", fontHeading.variable, fontBody.variable)}
       >
-        {children}
+        <main> {children}</main>
+        <Toaster />
       </body>
     </html>
   );
