@@ -44,7 +44,6 @@ export function Main() {
 
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <Notification />
       <Header />
       <main className="flex-1">
         <section
