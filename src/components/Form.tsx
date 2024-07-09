@@ -4,22 +4,26 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 import { toast } from "sonner";
-
 import { Loader2 } from "lucide-react";
 
 function Form() {
   const [loading, setLoading] = useState(false);
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleSumbit = (formData: FormData) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     setLoading(true);
-    submitContact(formData);
+    await submitContact({ email, message });
   };
 
-  async function submitContact(formData: FormData) {
-    setLoading(true);
-    const email = formData.get("email") as string;
-    const message = formData.get("message") as string;
-
+  async function submitContact({
+    email,
+    message,
+  }: {
+    email: string;
+    message: string;
+  }) {
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -31,43 +35,48 @@ function Form() {
 
       if (response.ok) {
         toast("Email sent successfully");
-        setLoading(false);
+        // Clear inputs after successful submission
+        setEmail("");
+        setMessage("");
       } else {
         toast("Failed to send email. Please try again.");
-        setLoading(false);
       }
     } catch (error) {
       toast("Failed to send email. Please try again.");
-      setLoading(false);
       console.error("Error sending email:", error);
+    } finally {
+      setLoading(false);
     }
   }
+
   return (
-    <form action={handleSumbit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-4">
       <Input
         className="w-full"
         placeholder="Enter your email"
         type="email"
-        name="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
         required
       />
       <Textarea
         className="w-full"
         placeholder="Your message"
-        name="message"
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
         rows={4}
         required
       />
-      {loading ? (
-        <Button disabled>
-          <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-          Please wait
-        </Button>
-      ) : (
-        <Button type="submit" className="w-full">
-          Contact Me
-        </Button>
-      )}
+      <Button type="submit" className="w-full" disabled={loading}>
+        {loading ? (
+          <>
+            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            Please wait
+          </>
+        ) : (
+          "Contact Me"
+        )}
+      </Button>
     </form>
   );
 }
