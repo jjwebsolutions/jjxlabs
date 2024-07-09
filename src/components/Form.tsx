@@ -1,12 +1,22 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 import { toast } from "sonner";
 
+import { Loader2 } from "lucide-react";
+
 function Form() {
+  const [loading, setLoading] = useState(false);
+
+  const handleSumbit = (formData: FormData) => {
+    setLoading(true);
+    submitContact(formData);
+  };
+
   async function submitContact(formData: FormData) {
+    setLoading(true);
     const email = formData.get("email") as string;
     const message = formData.get("message") as string;
 
@@ -21,16 +31,19 @@ function Form() {
 
       if (response.ok) {
         toast("Email sent successfully");
+        setLoading(false);
       } else {
         toast("Failed to send email. Please try again.");
+        setLoading(false);
       }
     } catch (error) {
       toast("Failed to send email. Please try again.");
+      setLoading(false);
       console.error("Error sending email:", error);
     }
   }
   return (
-    <form action={submitContact} className="space-y-4">
+    <form action={handleSumbit} className="space-y-4">
       <Input
         className="w-full"
         placeholder="Enter your email"
@@ -45,9 +58,16 @@ function Form() {
         rows={4}
         required
       />
-      <Button type="submit" className="w-full">
-        Contact Me
-      </Button>
+      {loading ? (
+        <Button disabled>
+          <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+          Please wait
+        </Button>
+      ) : (
+        <Button type="submit" className="w-full">
+          Contact Me
+        </Button>
+      )}
     </form>
   );
 }
