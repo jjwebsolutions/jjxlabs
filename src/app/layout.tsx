@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import "./globals.css";
 import { Metadata } from "next";
 import { Toaster } from "@/components/ui/sonner";
+import { Analytics } from "@vercel/analytics/next";
 
 const fontHeading = IBM_Plex_Mono({
   subsets: ["latin"],
@@ -57,7 +58,10 @@ export default function RootLayout({
       <body
         className={cn("antialiased", fontHeading.variable, fontBody.variable)}
       >
-        <main> {children}</main>
+        <main>
+          {children}
+          <Analytics />
+        </main>
         <Toaster />
       </body>
     </html>
